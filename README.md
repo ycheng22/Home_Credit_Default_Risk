@@ -12,4 +12,4 @@ Some models: Random Forest, LightGBM, XGBoost, etc. are used to make better pred
 
 ## Results Summarization
 
-![](images/Results Summarization.png)
+![](./images/Results Summarization.png)
