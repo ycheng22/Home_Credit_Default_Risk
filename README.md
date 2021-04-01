@@ -9,3 +9,7 @@ Data source: [Home Credit Default Risk](https://www.kaggle.com/c/home-credit-def
 `2_Feature_Engineering_and _Modeling.ipynb` includes feature engineering and modeling. 
 
 Some models: Random Forest, LightGBM, XGBoost, etc. are used to make better prediction.
+
+## Results Summarization
+
+![](images/Results Summarization.png)
