@@ -20,6 +20,14 @@ Data source: [Home Credit Default Risk](https://www.kaggle.com/c/home-credit-def
  ┣ 📜test_CatBoost.pdf
 ```
 
+**Content:**
+  - [`Part1_Introduction_and_EDA.ipynb`](#part1_introduction_and_edaipynb)
+  - [`Part2_Data_Cleaning_and Feature_Engineering.ipynb`](#part2_data_cleaning_and-feature_engineeringipynb)
+  - [`Part3_Model_Training.ipynb`](#part3_model_trainingipynb)
+  - [Results Summarization](#results-summarization)
+  - [`test_CatBoost.ipynb`](#test_catboostipynb)
+  - [GPU Training:](#gpu-training)
+
 ## `Part1_Introduction_and_EDA.ipynb` 
 
 Inlcudes introduction and exploratory data analysis. 
