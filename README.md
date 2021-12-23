@@ -139,13 +139,13 @@ Includes the training of `CatBoostClassifier` Model on `GPU`
 ```
 
 **Comments:**
-- `CatBoost` has plot method, which can visualize the evolution of evaluation metric.
 - Training `CatBoostClassifier model`  with CPU, which is very slow.
 - Training `CatBoostClassifier model` with defined Boosting class.
 - Training `CatBoostClassifier model` with GPU, which is 10* faster than CPU method (This is a small case, for large case, the speed improvment is much obvious).
 - Tried to apply `RandomizedSearchCV` with `CatBoostClassifier GPU model`, the kernel kept dying.
 - Tried to apply `BayesianOptimization` with `CatBoostClassifier GPU model`, the kernel kept dying.
-
+- `CatBoost` has `plot` method, which can visualize the evolution of evaluation metric.
+<img src="./images/catboost_plot.png"/>
 
 ## GPU Training:
 
