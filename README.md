@@ -20,18 +20,20 @@ Data source: [Home Credit Default Risk](https://www.kaggle.com/c/home-credit-def
  ┣ 📜test_CatBoost.pdf
 ```
 
-## `Part1_Introduction_and_EDA.ipynb` inlcudes introduction and exploratory data analysis. 
+## `Part1_Introduction_and_EDA.ipynb` 
+
+Inlcudes introduction and exploratory data analysis. 
 
 1. Defining utility functions
 2. Exploratory Data Analysis (EDA)
-2.1 application_train.csv and application_test.csv
-2.1.1 Basic Stats
-2.1.2 NaN columns and percentages
-2.1.3 Distribution of target variable
-2.1.4 Phi-K matrix
-2.1.5 Correlation matrix of numerical features
-2.1.6 Plotting distribution of categorical variables
-2.1.7 Plotting distribution of Continuous Variables
+  2.1 application_train.csv and application_test.csv
+  2.1.1 Basic Stats
+  2.1.2 NaN columns and percentages
+  2.1.3 Distribution of target variable
+  2.1.4 Phi-K matrix
+  2.1.5 Correlation matrix of numerical features
+  2.1.6 Plotting distribution of categorical variables
+  2.1.7 Plotting distribution of Continuous Variables
 2.2 bureau.csv
 ...
 2.3 bureau_balance.csv
