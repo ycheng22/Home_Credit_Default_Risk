@@ -4,8 +4,6 @@ This is a competition from Kaggle, predicting if the client would default or not
 
 Data source: [Home Credit Default Risk](https://www.kaggle.com/c/home-credit-default-risk/overview/description).
 
-![title](images/table_relation.png)
-
 ```
 📦Home_Credit_Default_Risk
  ┣ 📂images
@@ -53,7 +51,11 @@ Inlcudes introduction and exploratory data analysis.
 ```
 
 **Comments:**
-
+- For each table, we will first check basic stats like the number of records in tables, number of features, number of NaN values, etc.
+- Next, we will explore some of the features with respect to the target variable for each table. We will be employing the following plot:
+    - For `categorical features`, we will mostly use **Bar Plots** and **Pie Charts**.
+    - For `continuous/numeric features`, we will use **Box Plots**, **PDFs**, **CDF** and **Violin Plots**.
+- Phi-K matrix can calculate relations between categorical features
 
 ## `Part2_Data_Cleaning_and Feature_Engineering.ipynb` 
 
@@ -78,7 +80,10 @@ Includes data cleaning and feature engineering.
 ```
 
 **Comments:**
-
+- Defining function to change datatype to reduce memory usage
+- For each table, cleaning outliers, replacing NaN values and any other necessary operation based on discovery in EDA..
+- Creating new features based on domain knowledge, interactions between different tables.
+- Dropping features which only has one unique value, selecting useful featuers with LightGBM recursively.
 
 ## `Part3_Model_Training.ipynb` 
 
@@ -103,6 +108,15 @@ Some models: `Random Forest, LightGBM, XGBoost`, etc. are used to make better pr
 ```
 
 **Comments:**
+- Training `random model` as benchmark
+- Training `Logistic Regression with L2 Regularization model`, `Linear SVM model`, `Random Forest Classifier model`, tuning hyperparamers with `RandomizedSearchCV` method.
+- Training `XGBClassifier model` on GPU, `XGBClassifier model with reduced features` on GPU, `LightGBM model`, tuning hyperparamers with `BayesianOptimization` method
+- Stacking previous trained model as `Stacking Classifier`, blending the predictions from previous trained models with their normalized coefficient.
+- Comparing all submitted scores as below:
+  
+## Results Summarization
+
+<img src="./images/Results Summarization.png"/>
 
 ## `test_CatBoost.ipynb` 
 
@@ -117,10 +131,13 @@ Includes the training of `CatBoostClassifier` Model on `GPU`
 ```
 
 **Comments:**
+- `CatBoost` has plot method, which can visualize the evolution of evaluation metric.
+- Training `CatBoostClassifier model`  with CPU, which is very slow.
+- Training `CatBoostClassifier model` with defined Boosting class.
+- Training `CatBoostClassifier model` with GPU, which is 10* faster than CPU method (This is a small case, for large case, the speed improvment is much obvious).
+- Tried to apply `RandomizedSearchCV` with `CatBoostClassifier GPU model`, the kernel kept dying.
+- Tried to apply `BayesianOptimization` with `CatBoostClassifier GPU model`, the kernel kept dying.
 
-## Results Summarization
-
-<img src="./images/Results Summarization.png"/>
 
 ## GPU Training:
 
