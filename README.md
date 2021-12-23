@@ -4,7 +4,7 @@ This is a competition from Kaggle, predicting if the client would default or not
 
 Data source: [Home Credit Default Risk](https://www.kaggle.com/c/home-credit-default-risk/overview/description).
 
-<img src="images/table_relation.png" >
+![title](images/table_relation.png)
 
 ```
 📦Home_Credit_Default_Risk
