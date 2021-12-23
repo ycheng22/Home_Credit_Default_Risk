@@ -14,3 +14,5 @@ Some models: Random Forest, LightGBM, XGBoost, etc. are used to make better pred
 
 <img src="./images/Results Summarization.png"/>
 
+
+## GPU Training:
